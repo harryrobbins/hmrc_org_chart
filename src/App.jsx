@@ -46,7 +46,7 @@ export default function App() {
 
   // Load Data
   useEffect(() => {
-    fetch('/hmrc-data.json')
+    fetch('./hmrc-data.json')
       .then(res => {
         if (!res.ok) throw new Error("Failed to fetch organogram data!");
         return res.json();
